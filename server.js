@@ -10,7 +10,7 @@ const fs = require("fs");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6000;
 const MONGO =
   process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/momentumplus";
 const User = mongoose.model(
@@ -181,12 +181,10 @@ app.post("/api/auth/register", async (req, res) => {
       typeof password !== "string" ||
       password.length < 8
     )
-      return res
-        .status(400)
-        .json({
-          error:
-            "Introduce datos válidos y una contraseña de al menos 8 caracteres.",
-        });
+      return res.status(400).json({
+        error:
+          "Introduce datos válidos y una contraseña de al menos 8 caracteres.",
+      });
     if (await User.exists({ email }))
       return res
         .status(409)
@@ -206,12 +204,10 @@ app.post("/api/auth/register", async (req, res) => {
       await sendVerification(u);
     } catch (e) {
       console.error("Error SMTP:", e.message);
-      return res
-        .status(503)
-        .json({
-          error:
-            "Cuenta creada, pero no se pudo enviar el correo. Utiliza reenviar confirmación.",
-        });
+      return res.status(503).json({
+        error:
+          "Cuenta creada, pero no se pudo enviar el correo. Utiliza reenviar confirmación.",
+      });
     }
     res.json({
       ok: true,
@@ -286,13 +282,11 @@ app.post("/api/auth/login", async (req, res) => {
   )
     return res.status(401).json({ error: "Email o contraseña incorrectos." });
   if (!u.emailVerified)
-    return res
-      .status(403)
-      .json({
-        error:
-          "Debes confirmar tu correo antes de entrar. Utiliza «Reenviar confirmación».",
-        code: "EMAIL_NOT_VERIFIED",
-      });
+    return res.status(403).json({
+      error:
+        "Debes confirmar tu correo antes de entrar. Utiliza «Reenviar confirmación».",
+      code: "EMAIL_NOT_VERIFIED",
+    });
   req.session.regenerate((err) => {
     if (err)
       return res.status(500).json({ error: "No se pudo iniciar sesión." });
