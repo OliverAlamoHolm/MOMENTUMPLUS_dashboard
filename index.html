@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOMENTUM+ | People · Knowledge · Opportunity</title>
+  <meta name="description" content="MOMENTUM+ — plataforma de formación, herramientas y desarrollo para distribuidores." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="publicSite">
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="MOMENTUM+ inicio"><img src="logo-transparent.png" alt="MOMENTUM+" /></a>
+      <nav class="desktop-nav">
+        <a href="#oportunidad">Oportunidad</a><a href="#historias">Historias</a><a href="#faq">Preguntas</a>
+      </nav>
+      <button class="btn btn-outline" id="openLogin">Área miembros</button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <span class="eyebrow">ZONA PÚBLICA · INVITADOS</span>
+          <h1>Conoce una forma más simple de <span>crecer, aprender y compartir.</span></h1>
+          <p class="hero-text">MOMENTUM+ reúne formación, herramientas y una comunidad pensada para ayudar a cada persona a avanzar paso a paso.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#oportunidad">Descubrir MOMENTUM+</a><button class="btn btn-ghost" id="heroMember">Ya soy miembro</button></div>
+          <p class="invited-by" id="invitedBy" hidden></p>
+        </div>
+        <div class="hero-visual"><div class="glow"></div><img src="logo-transparent.png" alt="Identidad visual MOMENTUM+" /></div>
+      </section>
+
+      <section class="section light" id="oportunidad">
+        <div class="section-head"><span class="eyebrow">01 · CONOCE LA OPORTUNIDAD</span><h2>Empieza por entender el proyecto.</h2><p>Una presentación breve y clara para saber qué es MOMENTUM+, cómo funciona y qué posibilidades ofrece.</p></div>
+        <div class="video-card"><div class="video-placeholder"><button class="play" aria-label="Reproducir vídeo">▶</button><span>Vídeo de presentación · 5–10 min</span></div><div class="video-side"><span class="pill">Empieza aquí</span><h3>Una visión general sin complicaciones</h3><p>Ideal para una primera toma de contacto antes de entrar en detalles de producto, formación o desarrollo.</p></div></div>
+      </section>
+
+      <section class="section dark" id="historias">
+        <div class="section-head"><span class="eyebrow">02 · HISTORIAS Y TESTIMONIOS</span><h2>Experiencias reales, contadas con claridad.</h2><p>Espacio para testimonios revisados y bien contextualizados, evitando promesas de resultados garantizados.</p></div>
+        <div class="testimonials"><blockquote><p>“Lo que más valoro es tener una ruta clara para aprender y avanzar sin sentirme perdido.”</p><footer>— Testimonio de ejemplo</footer></blockquote><blockquote><p>“La plataforma ayuda a tener materiales ordenados y una forma coherente de presentar el proyecto.”</p><footer>— Testimonio de ejemplo</footer></blockquote></div>
+      </section>
+
+      <section class="section" id="faq"><div class="section-head"><span class="eyebrow">03 · PREGUNTAS FRECUENTES</span><h2>Lo que normalmente quieres saber antes de empezar.</h2></div><div class="faq"><details><summary>¿Tengo que dejar mi trabajo?</summary><p>No. El contenido puede presentar el proyecto como una actividad que cada persona adapta a su situación, tiempo y objetivos.</p></details><details><summary>¿Necesito experiencia previa?</summary><p>No necesariamente. MOMENTUM+ está planteado para guiar desde los primeros pasos hasta contenidos más avanzados.</p></details><details><summary>¿Cómo empiezo?</summary><p>Empieza por la presentación, revisa la información básica y, si quieres saber más, contacta con la persona que te invitó.</p></details></div></section>
+
+      <section class="cta" id="contacto"><span class="eyebrow">¿QUIERES SABER MÁS?</span><h2>Contacta con la persona que te invitó.</h2><p id="ctaText">Tu solicitud se enviará directamente a tu contacto de MOMENTUM+.</p><a id="contactButton" class="btn btn-primary btn-large" href="mailto:info@momentumplus.es?subject=Quiero%20saber%20más%20sobre%20MOMENTUM+">Quiero más información</a></section>
+
+      <section class="member-preview"><div class="section-head"><span class="eyebrow">ZONA MOMENTUM+ · MIEMBROS</span><h2>Una vez dentro, cada usuario sigue su propio recorrido.</h2></div><div class="journey"><span>Empieza aquí</span><i>→</i><span>Nivel 1</span><i>→</i><span>Nivel 2</span><i>→</i><span>Nivel 3</span><i>→</i><span>Liderazgo 🚀</span></div><div class="dashboard-grid"><article><small>PROGRESO</small><h3>36%</h3><div class="progress"><span style="width:36%"></span></div></article><article><small>SIGUIENTE PASO</small><h3>Conseguir clientes</h3><p>3 lecciones pendientes</p></article><article><small>RECURSOS</small><h3>Biblioteca</h3><p>Vídeos, PDFs y herramientas</p></article><article><small>EVENTOS</small><h3>2 próximos</h3><p>Consulta tu calendario</p></article></div><button class="btn btn-outline" id="previewLogin">Acceder al área privada</button></section>
+    </main>
+    <footer><img src="logo-transparent.png" alt="MOMENTUM+" /><p>People · Knowledge · Opportunity</p><p class="muted">MOMENTUM+ · Área de formación y recursos</p></footer>
+  </div>
+
+  <!-- ÁREA PRIVADA -->
+  <div id="privateApp" class="private-app" hidden>
+    <aside class="member-sidebar" id="memberSidebar">
+      <div class="sidebar-brand"><img src="logo-transparent.png" alt="MOMENTUM+"><button class="sidebar-close" id="sidebarClose">×</button></div>
+      <div class="profile-mini"><div class="avatar" id="sidebarAvatar">MP</div><div><strong id="sidebarName">Miembro MOMENTUM+</strong><span id="sidebarRole">Miembro</span></div></div>
+      <nav class="member-nav" id="memberNav">
+        <button class="nav-item active" data-view="dashboard">⌂ <span>Inicio</span></button>
+        <button class="nav-item" data-view="academy">▶ <span>Academia</span></button>
+        <button class="nav-item" data-view="biblioteca">▤ <span>Biblioteca</span></button>
+        <button class="nav-item" data-view="eventos-member">◷ <span>Eventos</span></button>
+        <button class="nav-item" data-view="perfil">⚙ <span>Mi perfil</span></button>
+      </nav>
+      <nav class="member-nav admin-nav" id="adminNav" hidden>
+        <button class="nav-item active" data-view="admin-dashboard">⌂ <span>Resumen</span></button>
+        <button class="nav-item" data-view="admin-academy">▶ <span>Gestionar academia</span></button>
+        <button class="nav-item" data-view="admin-library">▤ <span>Gestionar biblioteca</span></button>
+        <button class="nav-item" data-view="admin-events">◷ <span>Gestionar eventos</span></button>
+        <button class="nav-item" data-view="admin-users">♙ <span>Usuarios</span></button>
+        <button class="nav-item" data-view="perfil">⚙ <span>Mi perfil</span></button>
+      </nav>
+      <div class="sidebar-bottom"><button class="nav-item danger" id="logoutBtn">↪ <span>Cerrar sesión</span></button></div>
+    </aside>
+
+    <div class="member-shell">
+      <header class="member-topbar">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div><span class="top-kicker" id="areaKicker">MOMENTUM+ · ÁREA PRIVADA</span><strong id="viewTitle">Inicio</strong></div>
+        <button class="user-chip" data-view="perfil"><span class="avatar small-avatar" id="topAvatar">MP</span><span id="topName">Miembro</span></button>
+      </header>
+
+      <main class="member-content">
+        <section class="member-view active" id="view-dashboard">
+          <div class="welcome-card simple-welcome"><div><span class="eyebrow">TU ESPACIO MOMENTUM+</span><h1>Hola, <span id="welcomeName">Miembro</span> 👋</h1><p>Tu progreso depende únicamente de tu avance en la Academia. Continúa por donde lo dejaste o consulta nuevos recursos y eventos.</p><button class="btn btn-primary" data-view="academy">Continuar en Academia</button></div><div class="progress-summary"><strong id="progressPct">36%</strong><span>Progreso de Academia</span><div class="progress"><span id="progressBar" style="width:36%"></span></div></div></div>
+          <div class="home-simple-grid">
+            <article class="panel home-action" data-view="academy"><span class="home-icon">▶</span><div><small>ACADEMIA</small><h3>Continúa tu formación</h3><p id="nextLessonText">Nivel 1 · 6 de 14 lecciones completadas</p></div><b>→</b></article>
+            <article class="panel home-action" data-view="biblioteca"><span class="home-icon">▤</span><div><small>BIBLIOTECA</small><h3>Materiales y recursos</h3><p>Vídeos, PDFs y presentaciones subidos por el administrador.</p></div><b>→</b></article>
+            <article class="panel home-action" data-view="eventos-member"><span class="home-icon">◷</span><div><small>EVENTOS</small><h3>Próximas sesiones</h3><p id="eventCountText">Consulta webinars, reuniones y eventos presenciales.</p></div><b>→</b></article>
+          </div>
+        </section>
+
+        <section class="member-view" id="view-academy"><div class="page-heading"><span class="eyebrow">ACADEMIA</span><h1>Tu recorrido de aprendizaje</h1><p>Completa las lecciones en orden. Tu porcentaje de progreso se calcula automáticamente a partir de las lecciones terminadas.</p></div><div id="academyPath" class="academy-path"></div></section>
+
+        <section class="member-view" id="view-biblioteca"><div class="page-heading"><span class="eyebrow">BIBLIOTECA</span><h1>Materiales y recursos</h1><p>Todo el contenido publicado por el administrador en un único lugar.</p></div><div class="library-toolbar"><div class="search-box">⌕ <input id="librarySearch" placeholder="Buscar recurso..."></div><div class="filter-pills" id="libraryFilters"><button class="active" data-filter="Todos">Todos</button><button data-filter="PDF">PDF</button><button data-filter="Vídeo">Vídeos</button><button data-filter="Presentación">Presentaciones</button></div></div><div class="resource-grid" id="memberLibraryGrid"></div></section>
+
+        <section class="member-view" id="view-eventos-member"><div class="page-heading"><span class="eyebrow">EVENTOS</span><h1>Próximos eventos</h1><p>Consulta la agenda y accede directamente a webinars o reuniones online.</p></div><div class="event-list-member" id="memberEventsList"></div></section>
+
+        <section class="member-view" id="view-perfil"><div class="page-heading"><span class="eyebrow">CUENTA</span><h1>Mi perfil</h1><p>Actualiza tus datos y gestiona la seguridad de tu cuenta.</p></div><div class="profile-layout"><div class="panel profile-card-large"><div class="avatar profile-avatar" id="profileAvatar">MP</div><div><h2 id="profileName">Miembro MOMENTUM+</h2><p id="profileRole">Miembro</p></div></div><div class="profile-stack"><div class="panel"><h2>Datos de cuenta</h2><div class="form-grid"><label>Nombre<input id="profileFirstName" value="Miembro"></label><label>Apellidos<input id="profileLastName" value="MOMENTUM+"></label><label>Email<input id="profileEmail" type="email" value="miembro@momentumplus.es"></label><label>Teléfono<input id="profilePhone" placeholder="+34 ..."></label></div><button class="btn btn-primary" id="saveProfile">Guardar cambios</button></div><div class="panel"><h2>Seguridad</h2><p class="muted-copy">Puedes cambiar tu contraseña o solicitar un enlace de recuperación por correo electrónico.</p><div class="form-grid one-col"><label>Contraseña actual<input id="currentPassword" type="password" placeholder="••••••••"></label><label>Nueva contraseña<input id="newPassword" type="password" placeholder="Mínimo 8 caracteres"></label></div><div class="security-actions"><button class="btn btn-primary" id="changePassword">Cambiar contraseña</button><button class="btn btn-outline" id="sendResetEmail">Enviar recuperación por email</button></div></div></div></div></section>
+
+        <section class="member-view" id="view-admin-dashboard"><div class="page-heading"><span class="eyebrow">ADMINISTRACIÓN</span><h1>Panel de control</h1><p>Gestiona la Academia, biblioteca, eventos y usuarios desde un único espacio.</p></div><div class="metric-grid admin-metrics"><article class="metric-card"><span>Usuarios activos</span><strong id="adminUsersCount">24</strong><small>Miembros con acceso</small></article><article class="metric-card"><span>Recursos</span><strong id="adminResourcesCount">0</strong><small>En biblioteca</small></article><article class="metric-card"><span>Eventos</span><strong id="adminEventsCount">0</strong><small>Publicados</small></article><article class="metric-card"><span>Lecciones</span><strong id="adminLessonsCount">0</strong><small>En Academia</small></article></div><div class="admin-quick-grid"><button class="panel quick-admin" data-view="admin-library"><b>＋</b><span><strong>Subir recurso</strong><small>PDF, vídeo o presentación</small></span></button><button class="panel quick-admin" data-view="admin-events"><b>＋</b><span><strong>Crear evento</strong><small>Webinar, reunión o presencial</small></span></button><button class="panel quick-admin" data-view="admin-academy"><b>＋</b><span><strong>Añadir lección</strong><small>Organiza niveles y contenido</small></span></button><button class="panel quick-admin" data-view="admin-users"><b>♙</b><span><strong>Gestionar usuarios</strong><small>Altas, estados y accesos</small></span></button></div></section>
+
+        <section class="member-view" id="view-admin-library"><div class="page-heading"><span class="eyebrow">ADMIN · BIBLIOTECA</span><h1>Gestionar biblioteca</h1><p>Publica vídeos, PDFs y presentaciones que aparecerán automáticamente en la biblioteca de los miembros.</p></div><div class="admin-layout"><form class="panel admin-form" id="resourceForm"><h2>Nuevo recurso</h2><label>Título<input id="resourceTitle" required placeholder="Ej. Presentación de oportunidad"></label><label>Tipo<select id="resourceType"><option>PDF</option><option>Vídeo</option><option>Presentación</option></select></label><label>Descripción<textarea id="resourceDescription" rows="3" placeholder="Breve descripción"></textarea></label><label>Archivo<input id="resourceFile" type="file" accept=".pdf,.ppt,.pptx,.mp4,.webm,.mov"></label><label>O enlace externo<input id="resourceLink" placeholder="https://..."></label><button class="btn btn-primary full" type="submit">Publicar recurso</button></form><div class="panel"><div class="panel-title-row"><h2>Recursos publicados</h2><span id="resourceListCount"></span></div><div id="adminResourceList" class="admin-list"></div></div></div></section>
+
+        <section class="member-view" id="view-admin-events"><div class="page-heading"><span class="eyebrow">ADMIN · EVENTOS</span><h1>Gestionar eventos</h1><p>Crea eventos y añade el enlace de acceso cuando se trate de webinars o reuniones.</p></div><div class="admin-layout"><form class="panel admin-form" id="eventForm"><h2>Nuevo evento</h2><label>Título<input id="eventTitle" required placeholder="Ej. Webinar de bienvenida"></label><div class="form-grid"><label>Fecha<input id="eventDate" type="date" required></label><label>Hora<input id="eventTime" type="time" required></label></div><label>Tipo<select id="eventType"><option>Webinar</option><option>Reunión</option><option>Formación</option><option>Presencial</option></select></label><label>Descripción<textarea id="eventDescription" rows="4" placeholder="Explica brevemente de qué trata el evento, a quién va dirigido y cualquier información útil para los asistentes."></textarea></label><label>Ubicación / enlace<input id="eventLink" placeholder="https://zoom.us/... o ubicación física"></label><button class="btn btn-primary full" type="submit">Publicar evento</button></form><div class="panel"><div class="panel-title-row"><h2>Eventos publicados</h2><span id="eventListCount"></span></div><div id="adminEventList" class="admin-list"></div></div></div></section>
+
+        <section class="member-view" id="view-admin-academy"><div class="page-heading"><span class="eyebrow">ADMIN · ACADEMIA</span><h1>Gestionar Academia</h1><p>Añade lecciones a cada nivel. Los usuarios verán su progreso en función de las lecciones que completen.</p></div><div class="admin-layout"><form class="panel admin-form" id="lessonForm"><h2>Nueva lección</h2><label>Título<input id="lessonTitle" required placeholder="Ej. Cómo hacer tu primera presentación"></label><label>Nivel<select id="lessonLevel"><option>Empieza aquí</option><option>Nivel 1</option><option>Nivel 2</option><option>Nivel 3</option><option>Liderazgo</option></select></label><label>Formato<select id="lessonFormat"><option>Vídeo</option><option>PDF</option><option>Presentación</option><option>Texto</option></select></label><label>Archivo<input id="lessonFile" type="file" accept=".pdf,.ppt,.pptx,.mp4,.webm,.mov"></label><label>O enlace externo<input id="lessonLink" placeholder="https://..."></label><button class="btn btn-primary full" type="submit">Añadir lección</button></form><div class="panel"><div class="panel-title-row"><h2>Contenido de Academia</h2><span id="lessonListCount"></span></div><div id="adminLessonList" class="admin-list"></div></div></div></section>
+
+        <section class="member-view" id="view-admin-users"><div class="page-heading"><span class="eyebrow">ADMIN · USUARIOS</span><h1>Usuarios</h1><p>Da de alta miembros, activa o desactiva accesos y envía recuperaciones de contraseña.</p></div><div class="panel users-panel"><div class="users-toolbar"><button class="btn btn-primary" id="addDemoUser">+ Añadir usuario</button><div class="search-box">⌕ <input id="userSearch" placeholder="Buscar usuario..."></div></div><div class="users-table-wrap"><table class="users-table"><thead><tr><th>Usuario</th><th>Email</th><th>Progreso</th><th>Estado</th><th>Acciones</th></tr></thead><tbody id="usersTableBody"></tbody></table></div></div></section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="loginDialog">
+    <form method="dialog" class="login-card" id="loginForm">
+      <button class="close" value="cancel" aria-label="Cerrar">×</button>
+      <img src="logo-transparent.png" alt="MOMENTUM+" />
+      <span class="eyebrow">ÁREA PRIVADA</span><h2>Accede a MOMENTUM+</h2>
+      <label>Email<input id="loginEmail" type="email" placeholder="tu@email.com" required /></label>
+      <label>Contraseña<input id="loginPassword" type="password" placeholder="Tu contraseña" required /></label>
+      <p class="login-error" id="loginError" hidden></p>
+      <button type="button" class="btn btn-primary full" id="fakeLogin">Entrar</button><button type="button" class="link-button" id="resendVerification" style="margin-top:12px">Reenviar correo de confirmación</button>
+      <div class="auth-links"><button type="button" class="link-button" id="openRegister">Crear una cuenta</button><button type="button" class="link-button" id="openForgot">¿Has olvidado tu contraseña?</button></div>
+    </form>
+  </dialog>
+
+
+  <dialog id="registerDialog">
+    <form class="login-card" id="registerForm">
+      <button class="close" type="button" id="closeRegister">×</button>
+      <img src="logo-transparent.png" alt="MOMENTUM+" />
+      <span class="eyebrow">NUEVA CUENTA</span><h2>Regístrate en MOMENTUM+</h2>
+      <div class="form-grid"><label>Nombre<input id="registerFirstName" required></label><label>Apellidos<input id="registerLastName" required></label></div>
+      <label>Email<input id="registerEmail" type="email" required></label>
+      <label>Contraseña<input id="registerPassword" type="password" minlength="8" required></label>
+      <label>Repetir contraseña<input id="registerPassword2" type="password" minlength="8" required></label>
+      <p class="login-error" id="registerError" hidden></p>
+      <button class="btn btn-primary full" type="submit">Crear cuenta</button>
+    </form>
+  </dialog>
+
+  <dialog id="forgotDialog">
+    <form class="login-card" id="forgotForm">
+      <button class="close" type="button" id="closeForgot">×</button>
+      <img src="logo-transparent.png" alt="MOMENTUM+" />
+      <span class="eyebrow">RECUPERAR ACCESO</span><h2>Restablecer contraseña</h2>
+      <p class="muted-copy">En local, si no configuras SMTP, el enlace aparecerá en la terminal del servidor.</p>
+      <label>Email<input id="forgotEmail" type="email" required></label>
+      <p class="login-error" id="forgotError" hidden></p>
+      <button class="btn btn-primary full" type="submit">Enviar enlace</button>
+    </form>
+  </dialog>
+
+  <dialog id="eventDetailsDialog" class="event-details-dialog">
+    <div class="event-details-card">
+      <button class="close" id="closeEventDetails" type="button" aria-label="Cerrar">×</button>
+      <span class="eyebrow" id="eventDetailsType">EVENTO</span>
+      <h2 id="eventDetailsTitle">Detalle del evento</h2>
+      <p class="event-details-meta" id="eventDetailsMeta"></p>
+      <div class="event-description" id="eventDetailsDescription"></div>
+      <div class="event-details-actions" id="eventDetailsActions"></div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast">Enlace copiado</div>
+  <script src="app.js"></script>
+</body>
+</html>
